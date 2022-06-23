@@ -13,11 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var urlLabel: UILabel!
     
     var items: [ItemModel] = [ItemModel]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         itemTableView.dataSource = self
     }
-
 
     @IBAction func makeMockCall(_ sender: UIButton) {
         urlLabel.text = mockUrl
